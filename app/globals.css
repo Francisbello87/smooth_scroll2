@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   background: black;
 }
@@ -51,7 +51,7 @@ body {
   color: white;
   font-size: 7vw;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   opacity: 0;
 }
@@ -65,7 +65,7 @@ body {
   color: white;
   font-size: 3vw;
   text-transform: uppercase;
-  margin-top: 20vw;
+  margin-top: 30vw;
   margin-left: 7vw;
 }
 

@@ -1,26 +1,26 @@
-"use client";
-import React, { useState, useLayoutEffect, useRef } from "react";
+'use client';
+import React, { useState, useLayoutEffect, useRef } from 'react';
 
-import Image from "next/image";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from 'next/image';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const cities = [
   {
-    title: "Abuja",
-    src: "abuja.avif",
+    title: 'Abuja',
+    src: 'abuja.avif',
   },
   {
-    title: "Kano",
-    src: "kano.avif",
+    title: 'Kano',
+    src: 'kano.avif',
   },
   {
-    title: "Lagos",
-    src: "Lagos.avif",
+    title: 'Lagos',
+    src: 'Lagos.avif',
   },
   {
-    title: "Enugu",
-    src: "enugu.avif",
+    title: 'Enugu',
+    src: 'enugu.avif',
   },
 ];
 
@@ -34,7 +34,7 @@ export default function Cities() {
     ScrollTrigger.create({
       trigger: imageContainer.current,
       pin: true,
-      start: "top-=100px",
+      start: 'top-=100px',
       end: document.body.offsetHeight - window.innerHeight - 50,
     });
   }, []);
@@ -53,9 +53,7 @@ export default function Cities() {
         <div className="column">
           <p>
             Nigeria has one of the largest economies in Africa, primarily driven
-            by its oil and gas industry. However, the country also faces
-            economic challenges, including high unemployment rates and economic
-            inequality.
+            by its oil and gas industry.
           </p>
         </div>
         <div className="column">
