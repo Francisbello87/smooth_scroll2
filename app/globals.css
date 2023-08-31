@@ -1,27 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.main {
+  visibility: hidden;
+}
+/* .main {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.main div {
+  height: 100vh;
+  background-color: red;
+} */
+
+.backgroundImage {
+  position: absolute;
+  height: 140vh;
+  width: 100%;
+  top: 0;
+  filter: brightness(0.5);
+}
+
+.backgroundImage img {
+  object-fit: cover;
+}
+
+.intro-container {
+  margin-top: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introImage {
+  position: absolute;
+  width: 350px;
+  height: 475px;
+  filter: brightness(0.6);
+}
+
+.intro-container h1 {
+  z-index: 3;
+  color: white;
+  font-size: 7vw;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.introImage img {
+  object-fit: cover;
+  object-position: top;
 }
